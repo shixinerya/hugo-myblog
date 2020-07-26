@@ -3,11 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://shixinerya.github.io/hugo-myblog/categories/</loc>
+    <loc>https://shixinerya.github.io/hugo-myblog/</loc>
+    <lastmod>2020-07-26T14:59:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://shixinerya.github.io/hugo-myblog/</loc>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/myblog2/</loc>
+    <lastmod>2020-07-26T14:59:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/</loc>
+    <lastmod>2020-07-26T14:59:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/blog/</loc>
+    <lastmod>2020-07-26T14:23:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/categories/</loc>
   </url>
   
   <url>
