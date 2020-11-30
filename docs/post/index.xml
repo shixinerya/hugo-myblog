@@ -6,10 +6,142 @@
     <description>Recent content in Posts on 李卓的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Aug 2020 22:17:10 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2020 18:21:42 +0800</lastBuildDate>
     
 	<atom:link href="https://shixinerya.github.io/hugo-myblog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SijixizuoDay01</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/sijixizuoday01/</link>
+      <pubDate>Fri, 23 Oct 2020 18:21:42 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/sijixizuoday01/</guid>
+      <description>四级写作 一、文化教育类 (一、)学习
+真题
+(1) 2000-06 ： Is a Test of Spoken English Necessary?
+(2) 2007-12 : What Electives (选修课) to Choose?
+compulsory courses .必修课 coursework 课程
+(3) 2010-06 : Due Attention Should Be Spent to Spelling
+(4) 2012-12 : Education Pays .
+充分重视
+  pay due attention to
+  Put great emphasis on .
+  attach great importance to .
+  attach utmost significance .</description>
+    </item>
+    
+    <item>
+      <title>EnglishDay01</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/englishday01/</link>
+      <pubDate>Tue, 20 Oct 2020 07:35:42 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/englishday01/</guid>
+      <description>新东方四级英语 四级词汇导学 课程怎么学？
+课内+课外
+课内： 强词 有理 视频课
+Step1. 1.0倍速。刷课基础单词+高频词汇
+Step2. 2.0倍速，再刷一遍
+Step3. 复习巩固+读真题句子
+冲高分，做近三年的真题，
+英语口语
+边听原文、边看原文、边读原文、不做题。
+四级写作 情景作文、图画作文、图表作文、提纲作文。
+ 提出问题：现状说明或观点说明或图画描述或图表描述 分析问题 -原因列举 -举例论证 -正反论证 总结或解决问题（归纳结论或建议措施）  应用文：书信、告示、致辞、新闻报道
+多读、多背、多写！ 抄到小本本上，很少有人这么用。 要有人帮忙改。 多背比较好。
+书加加 ： 首页搜索栏：四级写作与翻译高分字帖：印刷体或斜体：图书资源：范文录音
+十天搞定四级词汇
+四级写作与翻译</description>
+    </item>
+    
+    <item>
+      <title>Day04</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/day04/</link>
+      <pubDate>Sat, 17 Oct 2020 22:41:59 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/day04/</guid>
+      <description>Day04 启动 localhost:8080/renren-fast/ 报错
+Node.js的安装  官网下载安装node.js, node-v 配置npm使用淘宝镜像 npm config set registry http://registry.npm.taobao.org/  到vscode中打开renrenfast项目,打开控制台
+npm install 运行前端项目
+npm run dev 默认账号：admin 默认密码：admin
+自动前后联调
+下载人人开源 是不是数据库的问题，应该不是的 generater</description>
+    </item>
+    
+    <item>
+      <title>Day03</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/day03/</link>
+      <pubDate>Fri, 16 Oct 2020 07:37:22 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/day03/</guid>
+      <description>Day03 导入mysql数据 直接把命令行复制过去就好了
+下载人人开源项目 fast vue-fast
+数据库的名字 _ 和 -</description>
+    </item>
+    
+    <item>
+      <title>Day02</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/day02/</link>
+      <pubDate>Wed, 14 Oct 2020 10:44:27 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/day02/</guid>
+      <description>Day02 IDEA、git初始化项目 new moudle spring com.atguigu.gulimail gulimaill-product
+项目管理总管理 复制pom文件到主的谷粒mail下
+gitignore **/mvnw #任意路径下
+**/mvnw.cmd
+**/.mvn
+**/target/
+.idea
+**/.gitignore</description>
+    </item>
+    
+    <item>
+      <title>Day01</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/day01/</link>
+      <pubDate>Mon, 12 Oct 2020 15:12:28 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/day01/</guid>
+      <description>day01 MySql配置 docker run -p 3306:3306 &amp;ndash;name mysql -v /mydata/mysql/log:/var/log/mysql -v /mydata/mysql/data:/var/lib/mysql -v /mydata/mysql/conf:/etc/mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7 vi /mydata/mysql/conf/my.cnf
+[client] default-character-set=utf8
+[mysql] default-character-set=utf8
+[mysqld] init_connect=&#39;SET collation_connection = utf8_unicode_ci&amp;rsquo; init_connect=&#39;SET NAMES utf8&amp;rsquo; character-set-server=utf8 collation-server=utf8_unicode_ci skip-character-set-client-handshake skip-name-resolve
+redis 配置 mkdir -p /mydata/redis/conf touch /mydata/redis/conf/redis.conf
+docker run -p 6379:6379 &amp;ndash;name redis -v /mydata/redis/data:/data -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf -d redis redis-server /etc/redis/redis.conf docker exec -it redis redis-cli # 可以直接使用redis exit
+redis 数据持久化 redis-desktop
+maven 配置阿里云加速、配置jdk1.8运行环境 &amp;lt;profile&amp;gt; &amp;lt;id&amp;gt;jdk-1.</description>
+    </item>
+    
+    <item>
+      <title>MyblogSc</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/myblogsc/</link>
+      <pubDate>Mon, 05 Oct 2020 19:17:42 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/myblogsc/</guid>
+      <description>推送成功的解决方法 我使用了
+hugo -d docs 的命令 GitHub索引的方法是 docs 文件，我将生成的public替换为docs。
+后面的优化是，javaweb、Youtube上的hugo、和 gitpasage的深入。</description>
+    </item>
+    
+    <item>
+      <title>Myblog</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/myblog/</link>
+      <pubDate>Sun, 04 Oct 2020 18:36:04 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/myblog/</guid>
+      <description>项目前的准备 作者：李卓 摘要：我准备今年写完谷粒商城项目，成为大佬
+准备工作一 搭建工作的服务器：我现在在考虑用笔记本写博客还是用台式电脑
+准备工作二 准备好博客：每日记录当日学习的计划
+待定 待定 图片测试 </description>
+    </item>
+    
+    <item>
+      <title>8月30日</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/8%E6%9C%8830%E6%97%A5/</link>
+      <pubDate>Sun, 30 Aug 2020 23:17:32 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/8%E6%9C%8830%E6%97%A5/</guid>
+      <description>开学，，emm </description>
+    </item>
     
     <item>
       <title>Wangxiaobo</title>
@@ -71,7 +203,7 @@
       <pubDate>Sun, 26 Jul 2020 15:21:19 +0800</pubDate>
       
       <guid>https://shixinerya.github.io/hugo-myblog/post/%E5%88%92%E9%87%8D%E7%82%B9/</guid>
-      <description>总结一下  先是进行初始化。  hugo new site [文件夹的名字] 拉取主题:主题的网址  git clone https:// 要把主题的目录，转到config.toml文件的下面 theme = &amp;ldquo;ananke&amp;quot;创建一个文件,会在根目录下出现一个cont文件夹，记得要把deaft设置为false。  hugo new post/myblog.md 在本地查看  hugo serve -d 生成文件，  hugo -d docs git commit -m &amp;ldquo;提交信息&amp;rdquo; git remote add origin http:// git push -u origin master  </description>
+      <description>总结一下  先是进行初始化。  hugo new site [文件夹的名字]拉取主题:主题的网址  git clone https://要把主题的目录，转到config.toml文件的下面 theme = &amp;ldquo;ananke&amp;quot;创建一个文件,会在根目录下出现一个cont文件夹，记得要把deaft设置为false。  hugo new post/myblog.md在本地查看  hugo serve -d生成文件，  hugo -d docsgit commit -m &amp;ldquo;提交信息&amp;rdquo; git remote add origin http:// git push -u origin master  </description>
     </item>
     
     <item>
@@ -91,6 +223,170 @@
       
       <guid>https://shixinerya.github.io/hugo-myblog/post/blog/</guid>
       <description>博客内容 这是第一个博客，GitHub + hugo 成功了 用图形化界面操作时比较简单的。</description>
+    </item>
+    
+    <item>
+      <title>Golang Gin 实战（五）| 接收数组和 Map</title>
+      <link>https://shixinerya.github.io/hugo-myblog/2019/12/18/golang-gin-query-parameters-array-map.html</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/2019/12/18/golang-gin-query-parameters-array-map.html</guid>
+      <description>标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容</description>
+    </item>
+    
+    <item>
+      <title>Golang Gin 实战（三）| 路由参数</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/2019-12-13-golang-gin-parameters-in-path/</link>
+      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/2019-12-13-golang-gin-parameters-in-path/</guid>
+      <description>标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容</description>
+    </item>
+    
+    <item>
+      <title>Golang Gin 实战（三）| 路由参数</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</link>
+      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</guid>
+      <description>标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/aria2&#43;rclone&#43;ariang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/aria2&#43;rclone&#43;ariang/</guid>
+      <description>docker run -d \  --name aria2ProNG \  --restart unless-stopped \  --log-opt max-size=1m \  -p 6881:6880 \  p3terx/ariang docker run -d \  --name aria2-pro \  --restart unless-stopped \  --log-opt max-size=1m \  -e PUID=$UID \  -e PGID=$GID \  -e RPC_SECRET=P3TERX \  -e RPC_PORT=6800 \  -e LISTEN_PORT=6888 \  -v ~/aria2-config:/config # 从本地的aria2上面拷贝yi&amp;#39;fen\ -v ~/rclone-downloads:/downloads \  -e SPECIAL_MODE=rclone \  p3terx/aria2-pro ​ &amp;ndash;network host \</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/aria2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/aria2/</guid>
+      <description>docker run -d &amp;ndash;name ariang &amp;ndash;restart unless-stopped &amp;ndash;log-opt max-size=1m -p 6880:6880 p3terx/ariang docker run -d &amp;ndash;name aria2-pro &amp;ndash;restart unless-stopped &amp;ndash;log-opt max-size=1m &amp;ndash;network host -e PUID=$UID -e PGID=$GID -e RPC_SECRET=admin -e RPC_PORT=6800 -e LISTEN_PORT=6888 p3terx/aria2-pro
+docker run -d &amp;ndash;name aria2-onedrive &amp;ndash;restart unless-stopped &amp;ndash;log-opt max-size=1m &amp;ndash;network host -e PUID=$UID -e PGID=$GID -e RPC_SECRET=dana5haw -e RPC_PORT=6803 -e LISTEN_PORT=33333 -v ~/aria2-onedrive-config:/config -v ~/onedrive-downloads:/downloads -e RCLONE=enable p3terx/aria2-pro
+docker run -d &amp;ndash;name aria2-onedrive &amp;ndash;restart unless-stopped &amp;ndash;log-opt max-size=1m &amp;ndash;network host -e PUID=$UID -e PGID=$GID -e RPC_SECRET=dana5haw -e RPC_PORT=6803 -e LISTEN_PORT=33333 -v ~/aria2-onedrive-config:/config -v ~/onedrive-downloads:/downloads -e RCLONE=enable p3terx/aria2-pro</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/aria2%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/aria2%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</guid>
+      <description>Skip to content
+Pull requestsIssues
+Marketplace
+Explore
+P3TERX/aria2.sh   Watch 21
+  Star897
+  Fork284
+  Code
+  Issues3
+  Pull requests
+  Actions
+  Projects
+  Wiki
+  Security
+  Insights
+  master
+1 branch0 tags
+Go to file
+Code
+Latest commit 
+P3TERX Version 2.7.2: Remove the PATH environment variable.
+60dfdebon 22 Sep
+Git stats  58 commits  Files Type</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/centos%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/centos%E9%85%8D%E7%BD%AE/</guid>
+      <description>一个服务器可以干什么 docker 环境
+# 卸载旧版本 # 较旧的 Docker 版本称为 docker 或 docker-engine 。如果已安装这些程序，请卸载它们以及相关的依赖项。 yum remove docker \  docker-client \  docker-client-latest \  docker-common \  docker-latest \  docker-latest-logrotate \  docker-logrotate \  docker-engine # 设置仓库 # 安装所需的软件包。yum-utils 提供了 yum-config-manager ，并且 device mapper 存储驱动程序需要 device-mapper-persistent-data 和 lvm2。 yum install -y yum-utils \  device-mapper-persistent-data \  lvm2 # 使用以下命令来设置稳定的仓库。 yum-config-manager \  --add-repo \  http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo # 安装 Docker Engine-Community # 安装最新版本的 Docker Engine-Community 和 containerd，或者转到下一步安装特定版本： yum install docker-ce docker-ce-cli containerd.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/rclone%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/rclone%E9%85%8D%E7%BD%AE/</guid>
+      <description>rclone配置 配置 Rclone 输入 rclone config 命令，会出现以下信息，参照下面的注释进行操作。
+Microsoft App Client Id Leave blank normally. Enter a string value. Press Enter for the default (&amp;quot;&amp;quot;). client_id&amp;gt; # 留空，回车 Microsoft App Client Secret Leave blank normally. Enter a string value. Press Enter for the default (&amp;quot;&amp;quot;). client_secret&amp;gt; # 留空，回车 Edit advanced config? (y/n) y) Yes n) No y/n&amp;gt; n # 选n Remote config Use auto config?
+ Say Y if not sure Say N if you are working on a remote or headless machine y) Yes n) No y/n&amp;gt; n # 选n For this to work, you will need rclone available on a machine that has a web browser available.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/steam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/steam/</guid>
+      <description>182695qwe..</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7offic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7offic/</guid>
+      <description>如何申请offic 翻墙 临时邮箱免费注册 https://xkx.me/mailbox/papersave@4k5.net
+https://www.fengjunzi.com/blog-66874.html</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/%E5%AF%86%E7%A0%81%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/%E5%AF%86%E7%A0%81%E8%AE%B0%E5%BD%95/</guid>
+      <description>在这个里面搭一个博客，同步到两个电脑上，部署到github上，
+选一个hugo主题开始搭建博客。
+博客运行在centos服务器上，centos上用git同步，两个电脑之间用onedrive同步。
+运行在github上。
+github上docker可以打包带走，
+博客的视频超星的链接，OneDrive上的链接，哔哩哔哩（双链接）。
+图片用七牛云图床和服务器图床。搭建
+搭建一些有用的软件
+//数据可以一直存在
+wordpress账号：kele
+wordpress密码：*tujn^a7mzY(hSFY16
+8081
+kele
+Ywswesqx@8869
+8443：云盘吗
+admin
+ywswesqx
+哔哩哔哩、公众号
+wordpress 8080
+rrshare 3001
+vipvideo 9527
+oneindex 8182
+oneindex 8181
+ ariang 6880
+搭载了 for pesonal
+我有五个 onedrive</description>
     </item>
     
   </channel>

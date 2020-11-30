@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>李卓的个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/hugo-myblog/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="一个服务器可以干什么 docker 环境
+# 卸载旧版本 # 较旧的 Docker 版本称为 docker 或 docker-engine 。如果已安装这些程序，请卸载它们以及相关的依赖项。 yum remove docker \  docker-client \  docker-client-latest \  docker-common \  docker-latest \  docker-latest-logrotate \  docker-logrotate \  docker-engine # 设置仓库 # 安装所需的软件包。yum-utils 提供了 yum-config-manager ，并且 device mapper 存储驱动程序需要 device-mapper-persistent-data 和 lvm2。 yum install -y yum-utils \  device-mapper-persistent-data \  lvm2 # 使用以下命令来设置稳定的仓库。 yum-config-manager \  --add-repo \  http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo # 安装 Docker Engine-Community # 安装最新版本的 Docker Engine-Community 和 containerd，或者转到下一步安装特定版本： yum install docker-ce docker-ce-cli containerd." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shixinerya.github.io/hugo-myblog/post/centos%E9%85%8D%E7%BD%AE/" />
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="一个服务器可以干什么 docker 环境
+# 卸载旧版本 # 较旧的 Docker 版本称为 docker 或 docker-engine 。如果已安装这些程序，请卸载它们以及相关的依赖项。 yum remove docker \  docker-client \  docker-client-latest \  docker-common \  docker-latest \  docker-latest-logrotate \  docker-logrotate \  docker-engine # 设置仓库 # 安装所需的软件包。yum-utils 提供了 yum-config-manager ，并且 device mapper 存储驱动程序需要 device-mapper-persistent-data 和 lvm2。 yum install -y yum-utils \  device-mapper-persistent-data \  lvm2 # 使用以下命令来设置稳定的仓库。 yum-config-manager \  --add-repo \  http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo # 安装 Docker Engine-Community # 安装最新版本的 Docker Engine-Community 和 containerd，或者转到下一步安装特定版本： yum install docker-ce docker-ce-cli containerd.">
+
+<meta itemprop="wordCount" content="452">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="一个服务器可以干什么 docker 环境
+# 卸载旧版本 # 较旧的 Docker 版本称为 docker 或 docker-engine 。如果已安装这些程序，请卸载它们以及相关的依赖项。 yum remove docker \  docker-client \  docker-client-latest \  docker-common \  docker-latest \  docker-latest-logrotate \  docker-logrotate \  docker-engine # 设置仓库 # 安装所需的软件包。yum-utils 提供了 yum-config-manager ，并且 device mapper 存储驱动程序需要 device-mapper-persistent-data 和 lvm2。 yum install -y yum-utils \  device-mapper-persistent-data \  lvm2 # 使用以下命令来设置稳定的仓库。 yum-config-manager \  --add-repo \  http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo # 安装 Docker Engine-Community # 安装最新版本的 Docker Engine-Community 和 containerd，或者转到下一步安装特定版本： yum install docker-ce docker-ce-cli containerd."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/hugo-myblog/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        李卓的个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://shixinerya.github.io/hugo-myblog/post/centos%E9%85%8D%E7%BD%AE/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://shixinerya.github.io/hugo-myblog/post/centos%E9%85%8D%E7%BD%AE/&amp;text=" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://shixinerya.github.io/hugo-myblog/post/centos%E9%85%8D%E7%BD%AE/&amp;title=" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="一个服务器可以干什么">一个服务器可以干什么</h1>
+<p>docker 环境</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
+<span style="color:#75715e"># 卸载旧版本</span>
+<span style="color:#75715e"># 较旧的 Docker 版本称为 docker 或 docker-engine 。如果已安装这些程序，请卸载它们以及相关的依赖项。</span>
+yum remove docker <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                  docker-client <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                  docker-client-latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                  docker-common <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                  docker-latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                  docker-latest-logrotate <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                  docker-logrotate <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>                  docker-engine
+<span style="color:#75715e"># 设置仓库</span>
+<span style="color:#75715e"># 安装所需的软件包。yum-utils 提供了 yum-config-manager ，并且 device mapper 存储驱动程序需要 device-mapper-persistent-data 和 lvm2。</span>
+yum install -y yum-utils <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  device-mapper-persistent-data <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  lvm2
+<span style="color:#75715e"># 使用以下命令来设置稳定的仓库。</span>
+yum-config-manager <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --add-repo <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+<span style="color:#75715e"># 安装 Docker Engine-Community</span>
+<span style="color:#75715e"># 安装最新版本的 Docker Engine-Community 和 containerd，或者转到下一步安装特定版本：</span>
+yum install docker-ce docker-ce-cli containerd.io
+
+$ yum list docker-ce --showduplicates | sort -r
+
+docker-ce.x86_64  3:18.09.1-3.el7                     docker-ce-stable
+docker-ce.x86_64  3:18.09.0-3.el7                     docker-ce-stable
+docker-ce.x86_64  18.06.1.ce-3.el7                    docker-ce-stable
+docker-ce.x86_64  18.06.0.ce-3.el7                    docker-ce-stable
+
+$ sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io
+$ sudo systemctl start docker
+sudo mkdir -p /etc/docker
+sudo systemctl daemon-reload
+ sudo systemctl restart docker
+docker官网地址  https://www.docker.com/
+
+docker启动命令,docker重启命令,docker关闭命令
+
+启动        systemctl start docker
+
+守护进程重启   sudo systemctl daemon-reload
+
+重启docker服务   systemctl restart  docker
+
+重启docker服务  sudo service docker restart
+
+关闭docker service docker stop
+
+关闭docker systemctl stop docker
+    
+</code></pre></div><h3 id="docker安装已安装的可省略此步骤快捷安装">Docker安装（已安装的可省略此步骤）（快捷安装）</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl -sSL https://get.docker.com/ | sh
+service docker restart 
+systemctl enable docker  <span style="color:#75715e">#设置开机自启</span>
+</code></pre></div><p>视频解析、aria2的安装（一个就够了）、onedrive分享盘 、</p>
+<ol>
+<li>
+<p>宝塔面板</p>
+<ul>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install -y wget <span style="color:#f92672">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span style="color:#f92672">&amp;&amp;</span> sh install.sh
+</code></pre></div><p>mwhp6lpn</p>
+<p>123456</p>
+</li>
+</ul>
+</li>
+<li>
+<p>分享盘</p>
+<ul>
+<li>
+<p>oneindex（oneindex）</p>
+<ul>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#创建临时容器：</span>
+docker run -itd --name<span style="color:#f92672">=</span>tmp baiyuetribe/oneindex
+<span style="color:#75715e">#拷贝容器内文件到宿主机目录：</span>
+docker cp tmp:/var/www/html /opt/oneindex
+docker rm -f tmp
+<span style="color:#75715e">#正式启动服务：</span>
+docker run -d -p 8181:80 -v /opt/oneindex:/var/www/html --restart<span style="color:#f92672">=</span>always baiyuetribe/oneindex
+</code></pre></div></li>
+<li>
+<p>挂载windows本地盘: RaiDrive垃圾</p>
+</li>
+</ul>
+<p>第二个分享盘：（把分享盘挂载本地）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#创建临时容器：</span>
+docker run -itd --name<span style="color:#f92672">=</span>tmp baiyuetribe/oneindex
+<span style="color:#75715e">#拷贝容器内文件到宿主机目录：</span>
+docker cp tmp:/var/www/html /opt/oneindexkel
+docker rm -f tmp
+<span style="color:#75715e">#正式启动服务：</span>
+docker run -d -p 8183:80 -v /opt/oneindexkel:/var/www/html --restart<span style="color:#f92672">=</span>always baiyuetribe/oneindex
+     
+     
+</code></pre></div><p>​	把主题更换一下</p>
+</li>
+<li>
+<p>安装失败可能是谷歌浏览器的原因</p>
+</li>
+<li>
+<p>完了之后可以进行主题更换</p>
+</li>
+</ul>
+</li>
+<li>
+<p>离线下载</p>
+<ul>
+<li>
+<p>aria2:一键安装</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">wget -N git.io/aria2.sh <span style="color:#f92672">&amp;&amp;</span> chmod +x aria2.sh <span style="color:#f92672">&amp;&amp;</span> ./aria2.sh
+// 因为网络原因，如果没有安装好的话多试几次，
+</code></pre></div></li>
+<li>
+<p>rclone：一键安装</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl https://rclone.org/install.sh | sudo bash
+     
+</code></pre></div></li>
+<li>
+<p>ariaNG（docker）（aria2 GUI）：如果连接不上的话，就把6800的端口开放</p>
+</li>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     
+     
+docker run -d <span style="color:#ae81ff">\ </span>   --name ariang <span style="color:#ae81ff">\ </span>   --restart unless-stopped <span style="color:#ae81ff">\ </span>   --log-opt max-size<span style="color:#f92672">=</span>1m <span style="color:#ae81ff">\ </span>   -p 6880:6880 <span style="color:#ae81ff">\ </span>   p3terx/ariang
+</code></pre></div></li>
+</ul>
+<p><strong>之后待解决的问题</strong></p>
+<p>在服务器上只能装一个，我想要使用多个账号那就要docker安装aria2，rclone。</p>
+<p>图床</p>
+<ul>
+<li>七牛云</li>
+</ul>
+</li>
+<li>
+<p>pyone 个人网盘:https://www.moerats.com/archives/806/</p>
+</li>
+<li>
+<p>wordpress:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run --name some-mysql -e MYSQL_ROOT_PASSWORD<span style="color:#f92672">=</span>baiyue -d mysql:5.5   <span style="color:#75715e">#安装数据库大小只有66MB</span>
+docker run -p 80:80 --name some-wordpress --link some-mysql:mysql -d wordpress  <span style="color:#75715e">#运行wordpress</span>
+</code></pre></div><p>wordpress的doker搭建方法：要可以完整的保存数据，用卷连接起来。</p>
+<p>最好能自己build一个wordpress。最新版哦，可以自由的切换主题</p>
+<p>hugo博客的搭建，不行的话试试世纪网盘。</p>
+<p>先用免费版的wordpress试试手，然后本地搭建。</p>
+</li>
+<li>
+<p>开源博客：GRAV</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://baiyue.one/archives/426.html
+</code></pre></div></li>
+<li>
+<p>KODExplorer-可道云</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -d -p 999:80 --name kodexplorer -v <span style="color:#e6db74">&#34;</span>$PWD<span style="color:#e6db74">&#34;</span>:/code baiyuetribe/kodexplorer
+</code></pre></div><ol>
+<li>JPress:可以对接微信公众号和小程序的博客：</li>
+</ol>
+<pre><code>wget https://gitee.com/fuhai/jpress/raw/master/docker-compose.yml
+docker-compose up -d
+</code></pre></li>
+<li>
+<p>owcloud网盘</p>
+<pre><code>docker run -it -d -p 8181:80 owncloud
+</code></pre><p>首次登陆是创建</p>
+</li>
+<li>
+<p>office：</p>
+</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -itd -p 666:80 --restart<span style="color:#f92672">=</span>always onlyoffice/communityserver
+</code></pre></div><ol start="11">
+<li>
+<p>nextcloud：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> docker run -d -p 8080:80 nextcloud 
+    
+</code></pre></div></li>
+<li>
+<p>docker桌面  Xfce是一个适用于类UNIX操作系统的轻量级桌面环境。它的目标是快速而低廉的系统资源，同时仍然具有视觉吸引力和用户友好性。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -d -p 6080:6080 -e VNC_RESOLUTION<span style="color:#f92672">=</span>1920x1080 wangguanzzz/xfce-desktop
+</code></pre></div><p>完成后访问：<a href="http://ip:6080/">http://ip:6080</a> 默认的vnc密码是 <code>vncpassword</code></p>
+</li>
+<li>
+<p>vpn(v2ry的文件配置)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -d --name v2ray --restart always --network host jrohy/v2ray    <span style="color:#75715e">#安装程序</span>
+docker exec v2ray bash -c <span style="color:#e6db74">&#34;v2ray info&#34;</span>  <span style="color:#75715e">#查看配置信息</span>
+    
+</code></pre></div></li>
+<li>
+<p>视频解析</p>
+<p>docker run -d -p 9527:80 baiyuetribe/onekey:vipvideo</p>
+</li>
+<li>
+<p>roboat</p>
+<pre><code>{
+  &quot;aria2-server&quot;: &quot;ws://39.103.135.32:6800/jsonrpc&quot;,
+  &quot;aria2-key&quot;: &quot;31a1a5df917f426a1092&quot;,
+  &quot;proxy&quot;: &quot;http://127.0.0.1:7890&quot;,
+  &quot;bot-key&quot;: &quot;123456789:xyz&quot;,
+  &quot;user-id&quot;: &quot;123456&quot;,
+  &quot;max-index&quot;: 10
+}
+</code></pre><pre><code>docker run -d \
+    --name tele-aria2 \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    -p  \
+    -v root/.tele-aria2-conf.json:/config.json \
+    p3terx/tele-aria2:0.2.2
+</code></pre></li>
+</ol>
+<p>OneDrive、centos</p>
+<p>科学上网、博客、搭建个人网盘</p>
+<p>发散是： 微软的office，pyone，</p>
+<p>docker安装软件：docker是跨平台的，我会在docker里面安装所有就好了。</p>
+<p>厉害的博主：</p>
+<p><a href="https://blog.kieng.cn/">https://blog.kieng.cn/</a>    //给了一个网盘</p>
+<p>软件在Windows上的使用，和软件在Linux上的使用，这就是跨平台的软件。</p>
+<p>多个网盘的使用：先使用国际版的装上，国内的高速版等这些完了之后再看。</p>
+<p>onedrive云盘的使用：一个做同步盘（同步盘里面的所有文件保持一致），一个做网盘可以存网上下载的东西。【所有重要的东西本地都有】</p>
+<p>centos服务器：aria2（ariaNG）【一键脚本，docker未完成】，oneindex【完成】（后续的进阶，可以更改网页，使图像更人性化，可以直接在博客跳转到对应的页面），rclone【已完成】，</p>
+<p>oneindex:直接抽取OneDrive上面的数据，流量是从OneDrive转接到服务器，再到我的本地网页。</p>
+<p>reclone：可以登录onedrive与网盘挂载。可以从网盘抽取数据。</p>
+<p>aria2：可以与reclone对接，用服务器做缓存和下载，转接到OneDrive上。</p>
+<p>最后的效果就是，对于一些大的，下载慢的东西（比如Java的jdk就可以直接在离线下载上下载）下载到OneDrive网盘上，我用的时候直接从OneDrive网盘上拉取。【世纪云盘可以加速，我觉得国际版的OneDrive是不慢的，科学上网就可以解决所有的网络问题】、</p>
+<p>科学上网：可以使我的搜索范围扩展到整个世界。</p>
+<p>一件事情不能做完要备案。</p>
+<p>临时邮箱，我还想再要onedrive几个账号。到时候没有了到淘宝店上买</p>
+<p>windows上的应用： raidrive，onedrive，rclone，ariang客户端，</p>
+<p>插件网盘助手 可以从百度网盘上拉取资源</p>
+<p>实验的环境可以在实验盘上进行。{ 我需要一个实验的环境，一个稳定的，一个是测试用的，git就是管理数据的，github是同步用的，git主要是代码，onedrive云盘同步的是所有}</p>
+<p>关于精力管理：不一定所有的事情都要用充沛的精力</p>
+<p>大同社会不是最好的社会。</p>
+<p>想着赚钱</p>
+<p>人力有穷我很菜，我帮不到你。</p>
+<p>我写的文章比较散乱想到哪里写哪里。我在一篇文章上写单一的内容很困难。</p>
+<p>博客优化：用一个标签可以把我写的话抽出来组成一个文章</p>
+<p>我能控制的只有那么一点点，其他的网盘就用来收藏吧。</p>
+<p>看视频最快是：哔哩哔哩、腾讯。我自己的可以bilibili，onedrive（paper），超星。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://shixinerya.github.io/hugo-myblog/" >
+    &copy;  李卓的个人博客 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/hugo-myblog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

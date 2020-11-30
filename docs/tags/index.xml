@@ -6,9 +6,28 @@
     <description>Recent content in Tags on 李卓的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 05 Oct 2020 19:17:42 +0800</lastBuildDate>
     
 	<atom:link href="https://shixinerya.github.io/hugo-myblog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>golang</title>
+      <link>https://shixinerya.github.io/hugo-myblog/tags/golang/</link>
+      <pubDate>Mon, 05 Oct 2020 19:17:42 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://shixinerya.github.io/hugo-myblog/tags/java/</link>
+      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/tags/java/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>李卓的个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/hugo-myblog/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="rclone配置 配置 Rclone 输入 rclone config 命令，会出现以下信息，参照下面的注释进行操作。
+Microsoft App Client Id Leave blank normally. Enter a string value. Press Enter for the default (&quot;&quot;). client_id&gt; # 留空，回车 Microsoft App Client Secret Leave blank normally. Enter a string value. Press Enter for the default (&quot;&quot;). client_secret&gt; # 留空，回车 Edit advanced config? (y/n) y) Yes n) No y/n&gt; n # 选n Remote config Use auto config?
+ Say Y if not sure Say N if you are working on a remote or headless machine y) Yes n) No y/n&gt; n # 选n For this to work, you will need rclone available on a machine that has a web browser available." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shixinerya.github.io/hugo-myblog/post/rclone%E9%85%8D%E7%BD%AE/" />
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="rclone配置 配置 Rclone 输入 rclone config 命令，会出现以下信息，参照下面的注释进行操作。
+Microsoft App Client Id Leave blank normally. Enter a string value. Press Enter for the default (&quot;&quot;). client_id&gt; # 留空，回车 Microsoft App Client Secret Leave blank normally. Enter a string value. Press Enter for the default (&quot;&quot;). client_secret&gt; # 留空，回车 Edit advanced config? (y/n) y) Yes n) No y/n&gt; n # 选n Remote config Use auto config?
+ Say Y if not sure Say N if you are working on a remote or headless machine y) Yes n) No y/n&gt; n # 选n For this to work, you will need rclone available on a machine that has a web browser available.">
+
+<meta itemprop="wordCount" content="468">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="rclone配置 配置 Rclone 输入 rclone config 命令，会出现以下信息，参照下面的注释进行操作。
+Microsoft App Client Id Leave blank normally. Enter a string value. Press Enter for the default (&quot;&quot;). client_id&gt; # 留空，回车 Microsoft App Client Secret Leave blank normally. Enter a string value. Press Enter for the default (&quot;&quot;). client_secret&gt; # 留空，回车 Edit advanced config? (y/n) y) Yes n) No y/n&gt; n # 选n Remote config Use auto config?
+ Say Y if not sure Say N if you are working on a remote or headless machine y) Yes n) No y/n&gt; n # 选n For this to work, you will need rclone available on a machine that has a web browser available."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/hugo-myblog/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        李卓的个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://shixinerya.github.io/hugo-myblog/post/rclone%E9%85%8D%E7%BD%AE/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://shixinerya.github.io/hugo-myblog/post/rclone%E9%85%8D%E7%BD%AE/&amp;text=" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://shixinerya.github.io/hugo-myblog/post/rclone%E9%85%8D%E7%BD%AE/&amp;title=" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="rclone配置">rclone配置</h1>
+<h3 id="配置-rclone">配置 Rclone</h3>
+<p>输入 <code>rclone config</code> 命令，会出现以下信息，参照下面的注释进行操作。</p>
+<!-- raw HTML omitted -->
+<p>Microsoft App Client Id
+Leave blank normally.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+client_id&gt;   # 留空，回车
+Microsoft App Client Secret
+Leave blank normally.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+client_secret&gt;   # 留空，回车
+Edit advanced config? (y/n)
+y) Yes
+n) No
+y/n&gt; n  # 选n
+Remote config
+Use auto config?</p>
+<ul>
+<li>Say Y if not sure</li>
+<li>Say N if you are working on a remote or headless machine
+y) Yes
+n) No
+y/n&gt; n  # 选n
+For this to work, you will need rclone available on a machine that has a web browser available.
+Execute the following on your machine:
+rclone authorize &ldquo;onedrive&rdquo;
+Then paste the result below:
+result&gt; {&ldquo;XXXXXXXX&rdquo;}  # 上面保存的token复制到这里
+2018/10/31 19:54:06 ERROR : Failed to save new token in config file: section &lsquo;P3TERX&rsquo; not found
+Choose a number from below, or type in an existing value
+1 / OneDrive Personal or Business
+\ &ldquo;onedrive&rdquo;
+2 / Root Sharepoint site
+\ &ldquo;sharepoint&rdquo;
+3 / Type in driveID
+\ &ldquo;driveid&rdquo;
+4 / Type in SiteID
+\ &ldquo;siteid&rdquo;
+5 / Search a Sharepoint site
+\ &ldquo;search&rdquo;
+Your choice&gt; 1  # 这里问你要选择的类型，选1
+Found 1 drives, please select the one you want to use:
+0: OneDrive (business)
+Chose drive to use:&gt; 0  # 程序找到网盘，这里编号是0，就选择0
+Found drive &lsquo;root&rsquo; of type &lsquo;business&rsquo;, URL: <a href="https://xxxxxx-my.sharepoint.com/personal/xxxxxxx/Documents">https://xxxxxx-my.sharepoint.com/personal/xxxxxxx/Documents</a>
+Is that okay?
+y) Yes
+n) No
+y/n&gt; y  # 选y</li>
+</ul>
+<hr>
+<h2 id="drive_type--business">[P3TERX]
+type = onedrive
+token = {&ldquo;XXXXXXXX&rdquo;}
+drive_id = XXXXXXXXX
+drive_type = business</h2>
+<p>y) Yes this is OK
+e) Edit this remote
+d) Delete this remote
+y/e/d&gt; y  # 选y
+Current remotes:</p>
+<p>Name                 Type
+====                 ====
+P3TERX               onedrive</p>
+<p>e) Edit existing remote
+n) New remote
+d) Delete remote
+r) Rename remote
+c) Copy remote
+s) Set configuration password
+q) Quit config
+e/n/d/r/c/s/q&gt; q  # 选q，退出<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->至此，Rclone 已成功连接到了 OneDrive 网盘。<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Rclone 连接 Google Drive<!-- raw HTML omitted --><!-- raw HTML omitted -->与 OneDrive 不同的是，Google Drive 不需要本地 Win­dows 客户端预先进行授权获取 to­ken，而是在配置过程中进行授权。<!-- raw HTML omitted --><!-- raw HTML omitted -->输入<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->rclone config<!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted -->命令，会出现以下信息，参照下面的注释进行操作。<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->点击查看<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->使用教程<!-- raw HTML omitted --><!-- raw HTML omitted -->配置完成后你可以去看<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->Rclone 相关使用教程<!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted -->来了解 Rclone 更多进阶使用技巧。<!-- raw HTML omitted --><!-- raw HTML omitted -->参考<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->rclone 官方手册<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->在 Debian/Ubuntu 上使用 rclone 挂载 OneDrive 网盘<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->本文作者：<!-- raw HTML omitted --><!-- raw HTML omitted -->P3TERX<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->本文链接：<!-- raw HTML omitted --><!-- raw HTML omitted --><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html">https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html</a><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->版权声明：<!-- raw HTML omitted -->本博客所有文章除特别声明外，均采用<!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted -->CC BY-NC-SA 4.0<!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted -->许可协议。非商业转载及引用请注明出处（作者、原文链接），商业转载请联系作者获得授权。<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="https://p3terx.com/tag/Linux/">Linux</a><a href="https://p3terx.com/tag/VPS/">VPS</a><a href="https://p3terx.com/tag/rclone/">Rclone</a><a href="https://p3terx.com/tag/OneDrive/">OneDrive</a><a href="https://p3terx.com/tag/Google-Drive/">Google Drive</a></p>
+<p><a href="">ENJOY 0</a></p>
+<p><a href="https://p3terx.com/archives/rclone-advanced-user-manual-common-command-parameters.html">Rclone 进阶使用教程 - 常用命令参数详解</a></p>
+<p><a href="https://p3terx.com/archives/learn-the-basics-of-git-from-scratch.html">从零开始学 Git 的基础操作</a></p>
+<ol>
+<li><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html#toc_0">前言</a></li>
+<li><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html#toc_1">安装 Rclone</a></li>
+<li>Rclone 连接 OneDrive
+<ol>
+<li><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html#toc_3">获取 token</a></li>
+<li><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html#toc_4">配置 Rclone</a></li>
+</ol>
+</li>
+<li><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html#toc_5">Rclone 连接 Google Drive</a></li>
+<li><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html#toc_6">使用教程</a></li>
+<li><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html#toc_7">参考</a></li>
+</ol>
+<h3 id="添加新评论">添加新评论</h3>
+<p>OωO</p>
+<p>提交评论</p>
+<h3 id="已有-2-条评论">已有 2 条评论</h3>
+<p><img src="https://secure.gravatar.com/avatar/2739bcc11d340116d4840e0198beaddc?s=64&amp;r=G&amp;d=" alt="kedup"><strong>kedup</strong></p>
+<p><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html/comment-page-1#comment-293">2019-12-02 11:03</a> <a href=""> 0 </a><a href=""> 0</a></p>
+<p>client_secret&gt; # 留空，回车 之后多了
+Optional - needed only for list/create/delete buckets - see your developer console.
+Enter a string value. Press Enter for the default (&quot;&quot;).
+project_number&gt;
+这个怎么输入</p>
+<p><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html/comment-page-1?replyTo=293#respond-post-57">回复</a></p>
+<p><img src="https://secure.gravatar.com/avatar/c42fdfa8aca47ec27a7c35dfa7d1dc51?s=64&amp;r=G&amp;d=" alt="P3TERX"><strong><a href="https://p3terx.com/go/aHR0cDovL3AzdGVyeC5jb20=">P3TERX</a></strong> 回复 <strong>@kedup</strong></p>
+<p><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html/comment-page-1#comment-294">2019-12-02 12:19</a> <a href=""> 0 </a><a href=""> 0</a></p>
+<p>没遇到过这个情况，建议你从头开始</p>
+<p><a href="https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html/comment-page-1?replyTo=294#respond-post-57">回复</a></p>
+<p>© 2020 P3TERX ZONE</p>
+<p>感谢陪伴：1320 天 12 小时 56 分 23 秒</p>
+<p>Powered by <a href="http://typecho.org/">Typecho</a> • <a href="https://blog.imalan.cn/archives/247/">Theme VOID</a></p>
+<p><a href="https://p3terx.com/go/aHR0cHM6Ly90Lm1lL1AzVEVSWF9aT05F">Telegram 频道</a> • <a href="https://p3terx.com/go/aHR0cHM6Ly90Lm1lL2pvaW5jaGF0L0Q3WjVUVThSdzBwOGRDLWo2YWhvZnc=">Telegram 群组</a></p>
+<h2 id="配置自动上传脚本">配置自动上传脚本</h2>
+<p><a href="https://p3terx.com/go/aHR0cHM6Ly9naXRodWIuY29tL1AzVEVSWC9hcmlhMi5zaA==">Aria2 一键安装管理脚本 增强版</a> 整合了 <a href="https://p3terx.com/go/aHR0cHM6Ly9naXRodWIuY29tL1AzVEVSWC9hcmlhMl9wZXJmZWN0X2NvbmZpZw==">Aria2 完美配置</a> ，安装后会附带一些附加功能脚本功能脚本，RCLONE 自动上传脚本就是其中之一。由于默认不启用，所以需要手动启用。</p>
+<blockquote>
+<p><strong>TIPS:</strong> 本项目的上传脚本使用更稳定快速的原生命令上传方式，而非处在测试阶段的挂载方式，这点和一般的脚本不同。</p>
+</blockquote>
+<ul>
+<li>输入<code>nano /root/.aria2c/aria2.conf</code>打开 Aria2 配置文件进行修改。或使用<a href="https://p3terx.com/go/aHR0cHM6Ly9naXRodWIuY29tL1AzVEVSWC9hcmlhMi5zaA==">Aria2 一键安装管理脚本 增强版</a>中的手动修改选项打开配置文件进行修改。找到“下载完成后执行的命令”，把<code>clean.sh</code>替换为<code>upload.sh</code>。</li>
+</ul>
+<pre><code class="language-none" data-lang="none"># 下载完成后执行的命令
+on-download-complete=/root/.aria2c/upload.sh
+</code></pre><blockquote>
+<p>nano 编辑器的操作方法参见《<a href="https://p3terx.com/archives/linux-nano-tutorial.html">Linux 下适合新手的文本编辑器 nano 使用教程</a>》</p>
+</blockquote>
+<ul>
+<li>输入<code>nano /root/.aria2c/script.conf</code>打开附加功能脚本配置文件进行修改，有中文注释，按照自己的实际情况进行修改，第一次使用只建议修改网盘名称。</li>
+</ul>
+<pre><code class="language-none" data-lang="none"># 网盘名称(RCLONE 配置时填写的 name)
+drive-name=OneDrive
+</code></pre><ul>
+<li>重启 Aria2 。脚本选项重启或者执行以下命令：</li>
+</ul>
+<pre><code class="language-none" data-lang="none">service aria2 restart
+</code></pre><h2 id="检查是否配置成功">检查是否配置成功</h2>
+<p>执行 <code>upload.sh</code> 脚本，提示 <code>success</code> 即配置成功。</p>
+<pre><code class="language-none" data-lang="none">/root/.aria2c/upload.sh
+</code></pre><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://shixinerya.github.io/hugo-myblog/" >
+    &copy;  李卓的个人博客 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/hugo-myblog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

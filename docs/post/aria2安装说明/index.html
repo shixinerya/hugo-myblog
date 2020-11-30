@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>李卓的个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/hugo-myblog/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="Skip to content
+Pull requestsIssues
+Marketplace
+Explore
+P3TERX/aria2.sh   Watch 21
+  Star897
+  Fork284
+  Code
+  Issues3
+  Pull requests
+  Actions
+  Projects
+  Wiki
+  Security
+  Insights
+  master
+1 branch0 tags
+Go to file
+Code
+Latest commit 
+P3TERX Version 2.7.2: Remove the PATH environment variable.
+60dfdebon 22 Sep
+Git stats  58 commits  Files Type" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shixinerya.github.io/hugo-myblog/post/aria2%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/" />
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Skip to content
+Pull requestsIssues
+Marketplace
+Explore
+P3TERX/aria2.sh   Watch 21
+  Star897
+  Fork284
+  Code
+  Issues3
+  Pull requests
+  Actions
+  Projects
+  Wiki
+  Security
+  Insights
+  master
+1 branch0 tags
+Go to file
+Code
+Latest commit 
+P3TERX Version 2.7.2: Remove the PATH environment variable.
+60dfdebon 22 Sep
+Git stats  58 commits  Files Type">
+
+<meta itemprop="wordCount" content="779">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Skip to content
+Pull requestsIssues
+Marketplace
+Explore
+P3TERX/aria2.sh   Watch 21
+  Star897
+  Fork284
+  Code
+  Issues3
+  Pull requests
+  Actions
+  Projects
+  Wiki
+  Security
+  Insights
+  master
+1 branch0 tags
+Go to file
+Code
+Latest commit 
+P3TERX Version 2.7.2: Remove the PATH environment variable.
+60dfdebon 22 Sep
+Git stats  58 commits  Files Type"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/hugo-myblog/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        李卓的个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://shixinerya.github.io/hugo-myblog/post/aria2%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://shixinerya.github.io/hugo-myblog/post/aria2%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/&amp;text=" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://shixinerya.github.io/hugo-myblog/post/aria2%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/&amp;title=" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><a href="https://github.com/P3TERX/aria2.sh#start-of-content">Skip to content</a></p>
+<p><img src="https://github.githubassets.com/images/search-key-slash.svg" alt="img"></p>
+<p><a href="https://github.com/pulls">Pull requests</a><a href="https://github.com/issues">Issues</a></p>
+<p><a href="https://github.com/marketplace">Marketplace</a></p>
+<p><a href="https://github.com/explore">Explore</a></p>
+<p><img src="https://avatars3.githubusercontent.com/u/63190594?s=60&amp;v=4" alt="@shixinerya"></p>
+<h1 id="p3terxhttpsgithubcomp3terxaria2shhttpsgithubcomp3terxaria2sh"><a href="https://github.com/P3TERX">P3TERX</a>/<strong><a href="https://github.com/P3TERX/aria2.sh">aria2.sh</a></strong></h1>
+<ul>
+<li>
+<p>Watch <a href="https://github.com/P3TERX/aria2.sh/watchers">21</a></p>
+</li>
+<li>
+<p>Star<a href="https://github.com/P3TERX/aria2.sh/stargazers">897</a></p>
+</li>
+<li>
+<p>Fork<a href="https://github.com/P3TERX/aria2.sh/network/members">284</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh">Code</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/issues">Issues3</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/pulls">Pull requests</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/actions">Actions</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/projects">Projects</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/wiki">Wiki</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/security">Security</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/pulse">Insights</a></p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>master</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/branches"> <strong>1</strong> branch</a><a href="https://github.com/P3TERX/aria2.sh/tags"> <strong>0</strong> tags</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/find/master">Go to file</a></p>
+<!-- raw HTML omitted -->
+<p>Code</p>
+<h2 id="latest-commit">Latest commit</h2>
+<p><a href="https://github.com/P3TERX"><img src="https://avatars3.githubusercontent.com/u/25927179?s=60&amp;u=871fce2e5426024df1d88a6ff68a9a3412deb46d&amp;v=4" alt="@P3TERX"></a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commits?author=P3TERX">P3TERX</a> <a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">Version 2.7.2: Remove the PATH environment variable.</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">60dfdeb</a><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">on 22 Sep</a></p>
+<h2 id="git-stats">Git stats</h2>
+<ul>
+<li><a href="https://github.com/P3TERX/aria2.sh/commits/master"> <strong>58</strong> commits</a></li>
+</ul>
+<h2 id="files">Files</h2>
+<p>Type</p>
+<p>Name</p>
+<p>Latest commit message</p>
+<p>Commit time</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/tree/master/service">service</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">Version 2.7.2: Remove the PATH environment variable.</a></p>
+<p>last month</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE">LICENSE</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/cd2ed413dbda5107a5a76d480a2147245da3dd58">Update LICENSE</a></p>
+<p>3 months ago</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/README.md">README.md</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/eaf5238032beee1f666e85943c648153ef811c43">Update README.md</a></p>
+<p>3 months ago</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/aria2.sh">aria2.sh</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">Version 2.7.2: Remove the PATH environment variable.</a></p>
+<p>last month</p>
+<h2 id="readmemd">README.md</h2>
+<h1 id="aria2-一键安装管理脚本-增强版">Aria2 一键安装管理脚本 增强版</h1>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/d06e2bd8234a15bbbfad67853338b5d05646f42f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f5033544552582f61726961322e73683f7374796c653d666c61742d737175617265" alt="LICENSE"></a> <a href="https://github.com/P3TERX/aria2.sh/stargazers"><img src="https://camo.githubusercontent.com/39f7ef0e013ab88056bc6807685c1eb560050aae/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f5033544552582f61726961322e73682e7376673f7374796c653d666c61742d737175617265266c6162656c3d5374617273266c6f676f3d676974687562" alt="GitHub Stars"></a> <a href="https://github.com/P3TERX/aria2.sh/fork"><img src="https://camo.githubusercontent.com/3641d16b1b5a37c196545e63f4baed9755cf2031/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f5033544552582f61726961322e73682e7376673f7374796c653d666c61742d737175617265266c6162656c3d466f726b73266c6f676f3d676974687562" alt="GitHub Forks"></a></p>
+<p>Aria2 是目前最强大的全能型下载工具，它支持 BT、磁力、HTTP、FTP 等下载协议，常用做离线下载的服务端。Aria2 一键安装管理脚本是 Toyo (逗比) 大佬最为知名的脚本作品之一，2018年11月14日逗比大佬因未知原因突然失联。由于博主非常喜欢 Aria2 所以自2018年12月7日起开始接手这个项目并进行了大量的功能与细节优化，一直持续维护至今。增强版脚本整合了 <a href="https://github.com/P3TERX/aria2.conf">Aria2 完美配置</a>，在安装 Aria2 的过程中会下载这套配置方案，这套方案包含了配置文件、附加功能脚本等文件，用于实现 Aria2 功能的增强和扩展，提升 Aria2 的下载速度与使用体验，解决 Aria2 在使用中遇到的 BT 下载无速度、文件残留占用磁盘空间、任务丢失、重复下载等问题。</p>
+<h2 id="功能特性">功能特性</h2>
+<ul>
+<li>使用 <a href="https://github.com/P3TERX/aria2.conf">Aria2 完美配置</a>方案
+<ul>
+<li>BT 下载率高、速度快</li>
+<li>重启后不丢失任务进度、不重复下载</li>
+<li>删除正在下载的任务自动删除未完成的文件</li>
+<li>下载错误自动删除未完成的文件</li>
+<li>下载完成自动删除控制文件(<code>.aria2</code>后缀名文件)</li>
+<li>下载完成自动删除种子文件(<code>.torrent</code>后缀名文件)</li>
+<li>下载完成自动删除空目录</li>
+<li>BT 下载完成自动清除垃圾文件(文件类型过滤功能)</li>
+<li>BT 下载完成自动清除小文件(文件大小过滤功能)</li>
+<li>有一定的防版权投诉、防迅雷吸血效果</li>
+<li>更好的 PT 下载支持</li>
+</ul>
+</li>
+<li>使用 <a href="https://github.com/P3TERX/aria2-builder">aria2-builder</a> 项目最新静态编译二进制文件
+<ul>
+<li>多平台：<code>amd64</code>, <code>i386</code>, <code>arm64</code>, <code>armhf</code></li>
+<li>全功能：<code>Async DNS</code>, <code>BitTorrent</code>, <code>Firefox3 Cookie</code>, <code>GZip</code>, <code>HTTPS</code>, <code>Message Digest</code>, <code>Metalink</code>, <code>XML-RPC</code>, <code>SFTP</code></li>
+<li>单服务器线程数最大值无上限（已破解线程数限制）</li>
+<li>防掉线程优化</li>
+<li>最新依赖库，下载更安全、稳定、快速</li>
+<li>持续更新最新版本</li>
+</ul>
+</li>
+<li>支持与 <a href="https://rclone.org/">RCLONE</a> 联动，更多扩展功能与玩法：
+<ul>
+<li><a href="https://p3terx.com/archives/offline-download-of-onedrive-gdrive.html">OneDrive、Google Drive 等网盘离线下载</a></li>
+<li><a href="https://p3terx.com/archives/baidunetdisk-transfer-to-onedrive-and-google-drive.html">百度网盘转存到 OneDrive 、Google Drive 等其他网盘</a></li>
+</ul>
+</li>
+<li>支持新一代互联网协议 IPv6</li>
+<li>定时自动更新 BT tracker 列表（无需重启）</li>
+</ul>
+<h2 id="项目地址">项目地址</h2>
+<p><a href="https://github.com/P3TERX/aria2.sh">https://github.com/P3TERX/aria2.sh</a></p>
+<p>支持项目请随手点个<code>star</code>，可以让更多的人发现、使用并受益。你的支持是我持续开发维护的动力。</p>
+<h2 id="系统要求">系统要求</h2>
+<p>CentOS 6+ / Debian 6+ / Ubuntu 14.04+</p>
+<h2 id="架构支持">架构支持</h2>
+<p>x86_64 / i386 / ARM64 / ARM32v7 / ARM32v6</p>
+<h2 id="使用说明">使用说明</h2>
+<ul>
+<li>为了确保能正常使用，请先安装基础组件<code>wget</code>、<code>curl</code>、<code>ca-certificates</code>，以 Debian 为例子：</li>
+</ul>
+<pre><code>apt install wget curl ca-certificates
+</code></pre><ul>
+<li>下载脚本</li>
+</ul>
+<pre><code>wget -N git.io/aria2.sh &amp;&amp; chmod +x aria2.sh
+</code></pre><ul>
+<li>运行脚本</li>
+</ul>
+<pre><code>./aria2.sh
+</code></pre><ul>
+<li>选择你要执行的选项</li>
+</ul>
+<pre><code> Aria2 一键安装管理脚本 增强版 [v2.6.2] by P3TERX.COM
+ 
+  0. 升级脚本
+ ———————————————————————
+  1. 安装 Aria2
+  2. 更新 Aria2
+  3. 卸载 Aria2
+ ———————————————————————
+  4. 启动 Aria2
+  5. 停止 Aria2
+  6. 重启 Aria2
+ ———————————————————————
+  7. 修改 配置
+  8. 查看 配置
+  9. 查看 日志
+ 10. 清空 日志
+ ———————————————————————
+ 11. 手动更新 BT-Tracker
+ 12. 自动更新 BT-Tracker
+ ———————————————————————
+
+ Aria2 状态: 已安装 | 已启动
+
+ 自动更新 BT-Tracker: 已开启
+
+ 请输入数字 [0-12]:
+</code></pre><h2 id="其他操作">其他操作</h2>
+<p>启动：<code>/etc/init.d/aria2 start</code> | <code>service aria2 start</code></p>
+<p>停止：<code>/etc/init.d/aria2 stop</code> | <code>service aria2 stop</code></p>
+<p>重启：<code>/etc/init.d/aria2 restart</code> | <code>service aria2 restart</code></p>
+<p>查看状态：<code>/etc/init.d/aria2 status</code> | <code>service aria2 status</code></p>
+<p>配置文件路径：<code>/root/.aria2c/aria2.conf</code> （配置文件有中文注释，若语言设置有问题会导致中文乱码）</p>
+<p>默认下载目录：<code>/root/downloads</code></p>
+<p>RPC 密钥：随机生成，可使用选项<code>7. 修改 配置文件</code>自定义</p>
+<h2 id="遇到问题如何处理">遇到问题如何处理</h2>
+<p>遇到问题先看 <a href="https://p3terx.com/archives/aria2_perfect_config-faq.html">FAQ</a> 再提问，你还可以加入 <a href="https://t.me/Aria2c">Aria2 TG 群</a>和小伙伴们一起讨论。要注意提问的方式和提供有用的信息，提问前建议去学习《<a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md">提问的智慧</a>》，这能更好的帮助你去解决问题和节约时间。诸如 “为什么不能使用？”、“那你能帮帮我吗？” 之类的问题应该没有人会知道。</p>
+<h2 id="更新日志">更新日志</h2>
+<p>更新推送：<a href="https://t.me/Aria2_Channel">Aria2 Channel</a></p>
+<h3 id="2020-08-15-v270">2020-08-15 v2.7.0</h3>
+<ul>
+<li>新增 AriaNg 链接功能</li>
+</ul>
+<h3 id="2020-08-09-v262">2020-08-09 v2.6.2</h3>
+<ul>
+<li>修改 资源下载链接</li>
+<li>优化 IP检测接口</li>
+</ul>
+<h3 id="2020-07-12-v260">2020-07-12 v2.6.0</h3>
+<ul>
+<li>适配新版 <a href="https://github.com/P3TERX/aria2.conf">Aria2 完美配置</a></li>
+<li>移除 Aria2 版本选择功能</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="lisence">Lisence</h2>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE">MIT</a> © Toyo x P3TERX</p>
+<h2 id="about">About</h2>
+<p>Aria2 一键安装管理脚本 增强版</p>
+<p><a href="https://p3terx.com/archives/aria2-oneclick-installation-management-script.html">p3terx.com/archives/aria2-oneclick-installation-management-script.html</a></p>
+<h3 id="topics">Topics</h3>
+<p><a href="https://github.com/topics/aria2">aria2</a> <a href="https://github.com/topics/aria2-config">aria2-config</a> <a href="https://github.com/topics/aria2c">aria2c</a> <a href="https://github.com/topics/aria2-cli">aria2-cli</a> <a href="https://github.com/topics/magnet">magnet</a> <a href="https://github.com/topics/magnet-link">magnet-link</a> <a href="https://github.com/topics/bt">bt</a> <a href="https://github.com/topics/bittorrent">bittorrent</a> <a href="https://github.com/topics/torrent">torrent</a> <a href="https://github.com/topics/download">download</a> <a href="https://github.com/topics/downloader">downloader</a></p>
+<h3 id="resources">Resources</h3>
+<p><a href="https://github.com/P3TERX/aria2.sh#readme"> Readme</a></p>
+<h3 id="license">License</h3>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE"> MIT License</a></p>
+<h2 id="releaseshttpsgithubcomp3terxaria2shreleases"><a href="https://github.com/P3TERX/aria2.sh/releases">Releases</a></h2>
+<p>No releases published</p>
+<h2 id="packageshttpsgithubcomusersp3terxpackagesrepo_namearia2sh"><a href="https://github.com/users/P3TERX/packages?repo_name=aria2.sh">Packages</a></h2>
+<p>No packages published</p>
+<h2 id="languages">Languages</h2>
+<ul>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/search?l=shell">Shell100.0%</a></p>
+</li>
+<li>
+<p>© 2020 GitHub, Inc.</p>
+</li>
+<li>
+<p><a href="https://github.com/site/terms">Terms</a></p>
+</li>
+<li>
+<p><a href="https://github.com/site/privacy">Privacy</a></p>
+</li>
+<li>
+<p><a href="https://github.com/security">Security</a></p>
+</li>
+<li>
+<p><a href="https://githubstatus.com/">Status</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/">Help</a></p>
+</li>
+<li>
+<p><a href="https://github.com/contact">Contact GitHub</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pricing">Pricing</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/">API</a></p>
+</li>
+<li>
+<p><a href="https://services.github.com/">Training</a></p>
+</li>
+<li>
+<p><a href="https://github.blog/">Blog</a></p>
+</li>
+<li>
+<p><a href="https://github.com/about">About</a><a href="https://github.com/P3TERX/aria2.sh#start-of-content">Skip to content</a></p>
+<p><img src="https://github.githubassets.com/images/search-key-slash.svg" alt="img"></p>
+<p><a href="https://github.com/pulls">Pull requests</a><a href="https://github.com/issues">Issues</a></p>
+<p><a href="https://github.com/marketplace">Marketplace</a></p>
+<p><a href="https://github.com/explore">Explore</a></p>
+<p><img src="https://avatars3.githubusercontent.com/u/63190594?s=60&amp;v=4" alt="@shixinerya"></p>
+<h1 id="p3terxhttpsgithubcomp3terxaria2shhttpsgithubcomp3terxaria2sh-1"><a href="https://github.com/P3TERX">P3TERX</a>/<strong><a href="https://github.com/P3TERX/aria2.sh">aria2.sh</a></strong></h1>
+<ul>
+<li>
+<p>Watch <a href="https://github.com/P3TERX/aria2.sh/watchers">21</a></p>
+</li>
+<li>
+<p>Star<a href="https://github.com/P3TERX/aria2.sh/stargazers">897</a></p>
+</li>
+<li>
+<p>Fork<a href="https://github.com/P3TERX/aria2.sh/network/members">284</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh">Code</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/issues">Issues3</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/pulls">Pull requests</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/actions">Actions</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/projects">Projects</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/wiki">Wiki</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/security">Security</a></p>
+</li>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/pulse">Insights</a></p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>master</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/branches"> <strong>1</strong> branch</a><a href="https://github.com/P3TERX/aria2.sh/tags"> <strong>0</strong> tags</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/find/master">Go to file</a></p>
+<!-- raw HTML omitted -->
+<p>Code</p>
+<h2 id="latest-commit-1">Latest commit</h2>
+<p><a href="https://github.com/P3TERX"><img src="https://avatars3.githubusercontent.com/u/25927179?s=60&amp;u=871fce2e5426024df1d88a6ff68a9a3412deb46d&amp;v=4" alt="@P3TERX"></a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commits?author=P3TERX">P3TERX</a> <a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">Version 2.7.2: Remove the PATH environment variable.</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">60dfdeb</a><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">on 22 Sep</a></p>
+<h2 id="git-stats-1">Git stats</h2>
+<ul>
+<li><a href="https://github.com/P3TERX/aria2.sh/commits/master"> <strong>58</strong> commits</a></li>
+</ul>
+<h2 id="files-1">Files</h2>
+<p>Type</p>
+<p>Name</p>
+<p>Latest commit message</p>
+<p>Commit time</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/tree/master/service">service</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">Version 2.7.2: Remove the PATH environment variable.</a></p>
+<p>last month</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE">LICENSE</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/cd2ed413dbda5107a5a76d480a2147245da3dd58">Update LICENSE</a></p>
+<p>3 months ago</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/README.md">README.md</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/eaf5238032beee1f666e85943c648153ef811c43">Update README.md</a></p>
+<p>3 months ago</p>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/aria2.sh">aria2.sh</a></p>
+<p><a href="https://github.com/P3TERX/aria2.sh/commit/60dfdebf1c03d29723403f3de1e374e362722b97">Version 2.7.2: Remove the PATH environment variable.</a></p>
+<p>last month</p>
+<h2 id="readmemd-1">README.md</h2>
+<h1 id="aria2-一键安装管理脚本-增强版-1">Aria2 一键安装管理脚本 增强版</h1>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/d06e2bd8234a15bbbfad67853338b5d05646f42f/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f5033544552582f61726961322e73683f7374796c653d666c61742d737175617265" alt="LICENSE"></a> <a href="https://github.com/P3TERX/aria2.sh/stargazers"><img src="https://camo.githubusercontent.com/39f7ef0e013ab88056bc6807685c1eb560050aae/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f5033544552582f61726961322e73682e7376673f7374796c653d666c61742d737175617265266c6162656c3d5374617273266c6f676f3d676974687562" alt="GitHub Stars"></a> <a href="https://github.com/P3TERX/aria2.sh/fork"><img src="https://camo.githubusercontent.com/3641d16b1b5a37c196545e63f4baed9755cf2031/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f726b732f5033544552582f61726961322e73682e7376673f7374796c653d666c61742d737175617265266c6162656c3d466f726b73266c6f676f3d676974687562" alt="GitHub Forks"></a></p>
+<p>Aria2 是目前最强大的全能型下载工具，它支持 BT、磁力、HTTP、FTP 等下载协议，常用做离线下载的服务端。Aria2 一键安装管理脚本是 Toyo (逗比) 大佬最为知名的脚本作品之一，2018年11月14日逗比大佬因未知原因突然失联。由于博主非常喜欢 Aria2 所以自2018年12月7日起开始接手这个项目并进行了大量的功能与细节优化，一直持续维护至今。增强版脚本整合了 <a href="https://github.com/P3TERX/aria2.conf">Aria2 完美配置</a>，在安装 Aria2 的过程中会下载这套配置方案，这套方案包含了配置文件、附加功能脚本等文件，用于实现 Aria2 功能的增强和扩展，提升 Aria2 的下载速度与使用体验，解决 Aria2 在使用中遇到的 BT 下载无速度、文件残留占用磁盘空间、任务丢失、重复下载等问题。</p>
+<h2 id="功能特性-1">功能特性</h2>
+<ul>
+<li>使用 <a href="https://github.com/P3TERX/aria2.conf">Aria2 完美配置</a>方案
+<ul>
+<li>BT 下载率高、速度快</li>
+<li>重启后不丢失任务进度、不重复下载</li>
+<li>删除正在下载的任务自动删除未完成的文件</li>
+<li>下载错误自动删除未完成的文件</li>
+<li>下载完成自动删除控制文件(<code>.aria2</code>后缀名文件)</li>
+<li>下载完成自动删除种子文件(<code>.torrent</code>后缀名文件)</li>
+<li>下载完成自动删除空目录</li>
+<li>BT 下载完成自动清除垃圾文件(文件类型过滤功能)</li>
+<li>BT 下载完成自动清除小文件(文件大小过滤功能)</li>
+<li>有一定的防版权投诉、防迅雷吸血效果</li>
+<li>更好的 PT 下载支持</li>
+</ul>
+</li>
+<li>使用 <a href="https://github.com/P3TERX/aria2-builder">aria2-builder</a> 项目最新静态编译二进制文件
+<ul>
+<li>多平台：<code>amd64</code>, <code>i386</code>, <code>arm64</code>, <code>armhf</code></li>
+<li>全功能：<code>Async DNS</code>, <code>BitTorrent</code>, <code>Firefox3 Cookie</code>, <code>GZip</code>, <code>HTTPS</code>, <code>Message Digest</code>, <code>Metalink</code>, <code>XML-RPC</code>, <code>SFTP</code></li>
+<li>单服务器线程数最大值无上限（已破解线程数限制）</li>
+<li>防掉线程优化</li>
+<li>最新依赖库，下载更安全、稳定、快速</li>
+<li>持续更新最新版本</li>
+</ul>
+</li>
+<li>支持与 <a href="https://rclone.org/">RCLONE</a> 联动，更多扩展功能与玩法：
+<ul>
+<li><a href="https://p3terx.com/archives/offline-download-of-onedrive-gdrive.html">OneDrive、Google Drive 等网盘离线下载</a></li>
+<li><a href="https://p3terx.com/archives/baidunetdisk-transfer-to-onedrive-and-google-drive.html">百度网盘转存到 OneDrive 、Google Drive 等其他网盘</a></li>
+</ul>
+</li>
+<li>支持新一代互联网协议 IPv6</li>
+<li>定时自动更新 BT tracker 列表（无需重启）</li>
+</ul>
+<h2 id="项目地址-1">项目地址</h2>
+<p><a href="https://github.com/P3TERX/aria2.sh">https://github.com/P3TERX/aria2.sh</a></p>
+<p>支持项目请随手点个<code>star</code>，可以让更多的人发现、使用并受益。你的支持是我持续开发维护的动力。</p>
+<h2 id="系统要求-1">系统要求</h2>
+<p>CentOS 6+ / Debian 6+ / Ubuntu 14.04+</p>
+<h2 id="架构支持-1">架构支持</h2>
+<p>x86_64 / i386 / ARM64 / ARM32v7 / ARM32v6</p>
+<h2 id="使用说明-1">使用说明</h2>
+<ul>
+<li>为了确保能正常使用，请先安装基础组件<code>wget</code>、<code>curl</code>、<code>ca-certificates</code>，以 Debian 为例子：</li>
+</ul>
+<pre><code>apt install wget curl ca-certificates
+</code></pre><ul>
+<li>下载脚本</li>
+</ul>
+<pre><code>wget -N git.io/aria2.sh &amp;&amp; chmod +x aria2.sh
+</code></pre><ul>
+<li>运行脚本</li>
+</ul>
+<pre><code>./aria2.sh
+</code></pre><ul>
+<li>选择你要执行的选项</li>
+</ul>
+<pre><code> Aria2 一键安装管理脚本 增强版 [v2.6.2] by P3TERX.COM
+   
+  0. 升级脚本
+ ———————————————————————
+  1. 安装 Aria2
+  2. 更新 Aria2
+  3. 卸载 Aria2
+ ———————————————————————
+  4. 启动 Aria2
+  5. 停止 Aria2
+  6. 重启 Aria2
+ ———————————————————————
+  7. 修改 配置
+  8. 查看 配置
+  9. 查看 日志
+ 10. 清空 日志
+ ———————————————————————
+ 11. 手动更新 BT-Tracker
+ 12. 自动更新 BT-Tracker
+ ———————————————————————
+  
+ Aria2 状态: 已安装 | 已启动
+  
+ 自动更新 BT-Tracker: 已开启
+  
+ 请输入数字 [0-12]:
+</code></pre><h2 id="其他操作-1">其他操作</h2>
+<p>启动：<code>/etc/init.d/aria2 start</code> | <code>service aria2 start</code></p>
+<p>停止：<code>/etc/init.d/aria2 stop</code> | <code>service aria2 stop</code></p>
+<p>重启：<code>/etc/init.d/aria2 restart</code> | <code>service aria2 restart</code></p>
+<p>查看状态：<code>/etc/init.d/aria2 status</code> | <code>service aria2 status</code></p>
+<p>配置文件路径：<code>/root/.aria2c/aria2.conf</code> （配置文件有中文注释，若语言设置有问题会导致中文乱码）</p>
+<p>默认下载目录：<code>/root/downloads</code></p>
+<p>RPC 密钥：随机生成，可使用选项<code>7. 修改 配置文件</code>自定义</p>
+<h2 id="遇到问题如何处理-1">遇到问题如何处理</h2>
+<p>遇到问题先看 <a href="https://p3terx.com/archives/aria2_perfect_config-faq.html">FAQ</a> 再提问，你还可以加入 <a href="https://t.me/Aria2c">Aria2 TG 群</a>和小伙伴们一起讨论。要注意提问的方式和提供有用的信息，提问前建议去学习《<a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md">提问的智慧</a>》，这能更好的帮助你去解决问题和节约时间。诸如 “为什么不能使用？”、“那你能帮帮我吗？” 之类的问题应该没有人会知道。</p>
+<h2 id="更新日志-1">更新日志</h2>
+<p>更新推送：<a href="https://t.me/Aria2_Channel">Aria2 Channel</a></p>
+<h3 id="2020-08-15-v270-1">2020-08-15 v2.7.0</h3>
+<ul>
+<li>新增 AriaNg 链接功能</li>
+</ul>
+<h3 id="2020-08-09-v262-1">2020-08-09 v2.6.2</h3>
+<ul>
+<li>修改 资源下载链接</li>
+<li>优化 IP检测接口</li>
+</ul>
+<h3 id="2020-07-12-v260-1">2020-07-12 v2.6.0</h3>
+<ul>
+<li>适配新版 <a href="https://github.com/P3TERX/aria2.conf">Aria2 完美配置</a></li>
+<li>移除 Aria2 版本选择功能</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="lisence-1">Lisence</h2>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE">MIT</a> © Toyo x P3TERX</p>
+<h2 id="about-1">About</h2>
+<p>Aria2 一键安装管理脚本 增强版</p>
+<p><a href="https://p3terx.com/archives/aria2-oneclick-installation-management-script.html">p3terx.com/archives/aria2-oneclick-installation-management-script.html</a></p>
+<h3 id="topics-1">Topics</h3>
+<p><a href="https://github.com/topics/aria2">aria2</a> <a href="https://github.com/topics/aria2-config">aria2-config</a> <a href="https://github.com/topics/aria2c">aria2c</a> <a href="https://github.com/topics/aria2-cli">aria2-cli</a> <a href="https://github.com/topics/magnet">magnet</a> <a href="https://github.com/topics/magnet-link">magnet-link</a> <a href="https://github.com/topics/bt">bt</a> <a href="https://github.com/topics/bittorrent">bittorrent</a> <a href="https://github.com/topics/torrent">torrent</a> <a href="https://github.com/topics/download">download</a> <a href="https://github.com/topics/downloader">downloader</a></p>
+<h3 id="resources-1">Resources</h3>
+<p><a href="https://github.com/P3TERX/aria2.sh#readme"> Readme</a></p>
+<h3 id="license-1">License</h3>
+<p><a href="https://github.com/P3TERX/aria2.sh/blob/master/LICENSE"> MIT License</a></p>
+<h2 id="releaseshttpsgithubcomp3terxaria2shreleases-1"><a href="https://github.com/P3TERX/aria2.sh/releases">Releases</a></h2>
+<p>No releases published</p>
+<h2 id="packageshttpsgithubcomusersp3terxpackagesrepo_namearia2sh-1"><a href="https://github.com/users/P3TERX/packages?repo_name=aria2.sh">Packages</a></h2>
+<p>No packages published</p>
+<h2 id="languages-1">Languages</h2>
+<ul>
+<li>
+<p><a href="https://github.com/P3TERX/aria2.sh/search?l=shell">Shell100.0%</a></p>
+</li>
+<li>
+<p>© 2020 GitHub, Inc.</p>
+</li>
+<li>
+<p><a href="https://github.com/site/terms">Terms</a></p>
+</li>
+<li>
+<p><a href="https://github.com/site/privacy">Privacy</a></p>
+</li>
+<li>
+<p><a href="https://github.com/security">Security</a></p>
+</li>
+<li>
+<p><a href="https://githubstatus.com/">Status</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/">Help</a></p>
+</li>
+<li>
+<p><a href="https://github.com/contact">Contact GitHub</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pricing">Pricing</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/">API</a></p>
+</li>
+<li>
+<p><a href="https://services.github.com/">Training</a></p>
+</li>
+<li>
+<p><a href="https://github.blog/">Blog</a></p>
+</li>
+<li>
+<p><a href="https://github.com/about">About</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://shixinerya.github.io/hugo-myblog/" >
+    &copy;  李卓的个人博客 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/hugo-myblog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

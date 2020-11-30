@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 李卓的个人博客</title>
+    <link>https://shixinerya.github.io/hugo-myblog/categories/hugo/</link>
+    <description>Recent content in hugo on 李卓的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Dec 2019 21:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://shixinerya.github.io/hugo-myblog/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang Gin 实战（三）| 路由参数</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</link>
+      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</guid>
+      <description>标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容
+标题 段落内容</description>
+    </item>
+    
+  </channel>
+</rss>

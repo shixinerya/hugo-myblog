@@ -4,16 +4,81 @@
   
   <url>
     <loc>https://shixinerya.github.io/hugo-myblog/post/</loc>
-    <lastmod>2020-08-23T22:17:10+08:00</lastmod>
+    <lastmod>2020-10-23T18:21:42+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://shixinerya.github.io/hugo-myblog/post/wangxiaobo/</loc>
-    <lastmod>2020-08-23T22:17:10+08:00</lastmod>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/sijixizuoday01/</loc>
+    <lastmod>2020-10-23T18:21:42+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://shixinerya.github.io/hugo-myblog/</loc>
+    <lastmod>2020-10-23T18:21:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/englishday01/</loc>
+    <lastmod>2020-10-20T07:35:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/day04/</loc>
+    <lastmod>2020-10-17T22:41:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/day03/</loc>
+    <lastmod>2020-10-16T07:37:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/day02/</loc>
+    <lastmod>2020-10-14T10:44:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/day01/</loc>
+    <lastmod>2020-10-12T15:12:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/categories/</loc>
+    <lastmod>2020-10-05T19:17:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/categories/golang/</loc>
+    <lastmod>2020-10-05T19:17:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/tags/golang/</loc>
+    <lastmod>2020-10-05T19:17:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/myblogsc/</loc>
+    <lastmod>2020-10-05T19:17:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/tags/</loc>
+    <lastmod>2020-10-05T19:17:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/myblog/</loc>
+    <lastmod>2020-10-04T18:36:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/8%E6%9C%8830%E6%97%A5/</loc>
+    <lastmod>2020-08-30T23:17:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/wangxiaobo/</loc>
     <lastmod>2020-08-23T22:17:10+08:00</lastmod>
   </url>
   
@@ -53,11 +118,60 @@
   </url>
   
   <url>
-    <loc>https://shixinerya.github.io/hugo-myblog/categories/</loc>
+    <loc>https://shixinerya.github.io/hugo-myblog/2019/12/18/golang-gin-query-parameters-array-map.html</loc>
+    <lastmod>2019-12-18T21:55:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://shixinerya.github.io/hugo-myblog/tags/</loc>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/2019-12-13-golang-gin-parameters-in-path/</loc>
+    <lastmod>2019-12-13T21:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</loc>
+    <lastmod>2019-12-13T21:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/categories/hugo/</loc>
+    <lastmod>2019-12-13T21:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/tags/java/</loc>
+    <lastmod>2019-12-13T21:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/aria2&#43;rclone&#43;ariang/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/aria2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/aria2%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/centos%E9%85%8D%E7%BD%AE/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/rclone%E9%85%8D%E7%BD%AE/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/steam/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7offic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/%E5%AF%86%E7%A0%81%E8%AE%B0%E5%BD%95/</loc>
   </url>
   
 </urlset>
