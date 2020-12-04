@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://shixinerya.github.io/hugo-myblog/post/</loc>
-    <lastmod>2020-10-23T18:21:42+08:00</lastmod>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/explore/</loc>
+    <lastmod>2020-12-04T09:39:28+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://shixinerya.github.io/hugo-myblog/post/sijixizuoday01/</loc>
-    <lastmod>2020-10-23T18:21:42+08:00</lastmod>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/</loc>
+    <lastmod>2020-12-04T09:39:28+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://shixinerya.github.io/hugo-myblog/</loc>
+    <lastmod>2020-12-04T09:39:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/post/sijixizuoday01/</loc>
     <lastmod>2020-10-23T18:21:42+08:00</lastmod>
   </url>
   
@@ -172,6 +177,10 @@
   
   <url>
     <loc>https://shixinerya.github.io/hugo-myblog/post/%E5%AF%86%E7%A0%81%E8%AE%B0%E5%BD%95/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shixinerya.github.io/hugo-myblog/contact/</loc>
   </url>
   
 </urlset>

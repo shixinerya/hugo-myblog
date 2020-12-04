@@ -6,10 +6,26 @@
     <description>Recent content in Posts on 李卓的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2020 18:21:42 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Dec 2020 09:39:28 +0800</lastBuildDate>
     
 	<atom:link href="https://shixinerya.github.io/hugo-myblog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Explore</title>
+      <link>https://shixinerya.github.io/hugo-myblog/post/explore/</link>
+      <pubDate>Fri, 04 Dec 2020 09:39:28 +0800</pubDate>
+      
+      <guid>https://shixinerya.github.io/hugo-myblog/post/explore/</guid>
+      <description>博客的大概思路
+洋气
+我们是一起学习的，博客是展示我自己的
+我需要头像姓名描述。
+一些平时的自我展示。
+主页是封面，可以聊天讨论。
+我能在手机上回复，可以扫码支付卖东西。
+要学习web，和hugo。</description>
+    </item>
     
     <item>
       <title>SijixizuoDay01</title>
@@ -108,7 +124,7 @@ gitignore **/mvnw #任意路径下
 redis 配置 mkdir -p /mydata/redis/conf touch /mydata/redis/conf/redis.conf
 docker run -p 6379:6379 &amp;ndash;name redis -v /mydata/redis/data:/data -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf -d redis redis-server /etc/redis/redis.conf docker exec -it redis redis-cli # 可以直接使用redis exit
 redis 数据持久化 redis-desktop
-maven 配置阿里云加速、配置jdk1.8运行环境 &amp;lt;profile&amp;gt; &amp;lt;id&amp;gt;jdk-1.</description>
+maven 配置阿里云加速、配置jdk1.8运行环境 &amp;lt;profile&amp;gt;&amp;lt;id&amp;gt;jdk-1.</description>
     </item>
     
     <item>
@@ -118,7 +134,7 @@ maven 配置阿里云加速、配置jdk1.8运行环境 &amp;lt;profile&amp;gt; &
       
       <guid>https://shixinerya.github.io/hugo-myblog/post/myblogsc/</guid>
       <description>推送成功的解决方法 我使用了
-hugo -d docs 的命令 GitHub索引的方法是 docs 文件，我将生成的public替换为docs。
+hugo -d docs的命令 GitHub索引的方法是 docs 文件，我将生成的public替换为docs。
 后面的优化是，javaweb、Youtube上的hugo、和 gitpasage的深入。</description>
     </item>
     
